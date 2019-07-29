@@ -1,11 +1,6 @@
 ;; Define load custom .el file function
 ;; Source: https://stackoverflow.com/a/2079146/6881855
-(defconst user-init-dir
-  (cond ((boundp 'user-emacs-directory)
-         user-emacs-directory)
-        ((boundp 'user-init-directory)
-         user-init-directory)
-        (t "~/.emacs.d/")))
+(defconst user-init-dir "~/.emacs.d/els.d/")
 (defun load-user-file (file)
   (interactive "f")
   "Load a file in current user's configuration directory"
@@ -13,7 +8,6 @@
 
 ;; Require Emacs' package functionality
 (require 'package)
-
 (setq package-archives
       '(("melpa" . "https://melpa.org/packages/")
      	 ("gnu" . "https://elpa.gnu.org/packages/")
