@@ -11,7 +11,7 @@
 (setq package-archives
       '(("melpa" . "https://melpa.org/packages/")
      	 ("gnu" . "https://elpa.gnu.org/packages/")
-	     ("org" . "http://orgmode.org/elpa/")))
+         ("org" . "http://orgmode.org/elpa/")))
 (package-initialize)
 
 (unless package-archive-contents
@@ -23,9 +23,6 @@
 (eval-when-compile
   (require 'use-package))
 
-;;(use-package graphene
-;;  :ensure t)
-
 (load-user-file "global-key.el")
 
 (custom-set-variables
@@ -33,7 +30,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (company-php use-package))))
+ '(package-selected-packages (quote (use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
