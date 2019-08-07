@@ -7,3 +7,5 @@
 (global-set-key (kbd "C-k") 'next-line)
 (global-set-key (kbd "C-j") 'backward-char)
 (global-set-key (kbd "C-l") 'forward-char)
+
+(global-set-key (kbd "C-/") 'comment-line)

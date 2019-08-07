@@ -35,6 +35,12 @@
 ;;  :config
 ;;  (ivy-mode 1))
 
+(use-package undo-tree
+  :ensure t
+  :config
+  (global-set-key (kbd "C-z") 'undo-tree-undo)
+  (global-set-key (kbd "C-S-Z") 'undo-tree-redo))
+
 (use-package projectile
   :ensure t
   :config
@@ -61,11 +67,8 @@
              ;; Enable auto-complete-mode
              (auto-complete-mode t)
 
-             (require 'ac-php)
+             ;; (require 'ac-php)
              (setq ac-sources '(ac-source-php))
-
-             ;; As an example (optional)
-;;             (yas-global-mode 1)
 
              ;; Enable ElDoc support (optional)
              (ac-php-core-eldoc-setup)
