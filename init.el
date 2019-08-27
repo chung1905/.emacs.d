@@ -27,6 +27,11 @@
 (eval-when-compile
   (require 'use-package))
 
+(use-package ivy
+  :ensure t
+  :config
+  (ivy-mode))
+
 (use-package php-mode
   :ensure t)
 
