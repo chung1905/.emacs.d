@@ -1,3 +1,6 @@
+;;; global-key --- Emacs
+;;; Commentary:
+;;; Code:
 (cua-mode t)
 
 ;; Separate C-i and "Tab" key
@@ -15,3 +18,6 @@
 (global-set-key (kbd "M-k") 'next-line)
 
 (global-set-key (kbd "C-/") 'comment-line)
+
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
+;;; global-key.el ends here
