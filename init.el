@@ -34,7 +34,7 @@
 
 (use-package counsel
   :ensure t
-  :diminish ivy
+  :diminish ivy-mode
   :config
   (ivy-mode 1)
   (setq ivy-use-virtual-buffers t)
