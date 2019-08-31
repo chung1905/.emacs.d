@@ -1,12 +1,12 @@
-;;; init.el --- Init Emacs
+;;; init.el --- Emacs init file
 ;;; Commentary:
 ;;; Code:
 ;; Define load custom .el file function
 ;; Source: https://stackoverflow.com/a/2079146/6881855
 (defconst user-init-dir "~/.emacs.d/els.d/")
 (defun load-user-file (file)
+  "Load a FILE in current user's configuration directory."
   (interactive "f")
-  "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
 ;; Require Emacs' package functionality
@@ -19,6 +19,8 @@
 
 (load-user-file "general.el")
 (load-user-file "global-key.el")
+(load-user-file "php-mode.el")
+(load-user-file "web-mode.el")
 
 (unless package-archive-contents
   (package-refresh-contents))
@@ -39,9 +41,9 @@
   (ivy-mode 1)
   (setq ivy-use-virtual-buffers t)
   (setq enable-recursive-minibuffers t)
-  (setq search-default-mode #'char-fold-to-regex)
   :bind (("C-s" . swiper)
 	 ("M-x" . counsel-M-x)
+	 ("C-c C-r" . ivy-resume)
 	 ("C-x C-f" . counsel-find-file)))
 
 (use-package smartparens
@@ -90,31 +92,6 @@
   :ensure t
   :config
   (global-flycheck-mode t))
-
-(use-package php-mode
-  :ensure t)
-
-(use-package ac-php
-  :ensure t)
-
-(add-hook 'php-mode-hook
-	  '(lambda ()
-	     ;; Enable auto-complete-mode
-	     (auto-complete-mode t)
-
-	     ;; (require 'ac-php)
-	     (setq ac-sources '(ac-source-php))
-
-	     ;; Enable ElDoc support (optional)
-	     (ac-php-core-eldoc-setup)
-
-	     ;; Jump to definition (optional)
-	     (define-key php-mode-map (kbd "M-]")
-	       'ac-php-find-symbol-at-point)
-
-	     ;; Return back (optional)
-	     (define-key php-mode-map (kbd "M-[")
-	       'ac-php-location-stack-back)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
