@@ -17,12 +17,6 @@
 	("org" . "http://orgmode.org/elpa/")))
 (package-initialize)
 
-(load-user-file "general.el")
-(load-user-file "global-key.el")
-(load-user-file "php-mode.el")
-(load-user-file "web-mode.el")
-(load-user-file "angularjs-mode.el")
-
 (unless package-archive-contents
   (package-refresh-contents))
 
@@ -31,6 +25,12 @@
 
 (eval-when-compile
   (require 'use-package))
+
+(load-user-file "general.el")
+(load-user-file "global-key.el")
+(load-user-file "php-mode.el")
+(load-user-file "web-mode.el")
+(load-user-file "angularjs-mode.el")
 
 (use-package diminish
   :ensure t)
