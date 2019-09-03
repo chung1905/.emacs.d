@@ -33,7 +33,8 @@
 (load-user-file "angularjs-mode.el")
 
 (use-package diminish
-  :ensure t)
+  :ensure t
+  :diminish eldoc-mode)
 
 (use-package counsel
   :ensure t
@@ -42,7 +43,7 @@
   (ivy-mode 1)
   (setq ivy-use-virtual-buffers t)
   (setq enable-recursive-minibuffers t)
-  :bind (("C-s" . swiper)
+  :bind (("C-f" . swiper)
 	 ("M-x" . counsel-M-x)
 	 ("C-c C-r" . ivy-resume)
 	 ("C-x C-f" . counsel-find-file)))
@@ -68,7 +69,8 @@
   ("C-S-<return>". crux-smart-open-line)
   ("C-c n" . crux-cleanup-buffer-or-region)
   ("C-c f" . crux-recentf-find-file)
-  ("C-a" . crux-move-beginning-of-line))
+  ("C-a" . crux-move-beginning-of-line)
+  ("<home>" . crux-move-beginning-of-line))
 
 (use-package projectile
   :ensure t

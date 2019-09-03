@@ -19,6 +19,7 @@
 
 (global-set-key (kbd "C-/") 'comment-line)
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "C-s") 'save-buffer)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
 ;;; global-key.el ends here
