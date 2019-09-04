@@ -74,8 +74,8 @@
 
 (use-package projectile
   :ensure t
-  :custom
-  (projectile-git-command "git ls-files -zco" "Search files which are ignored by git.")
+  ;; :custom
+  ;; (projectile-git-command "git ls-files -zco" "Search files which are ignored by git.")
   :config
   (projectile-mode +1)
   :bind-keymap
