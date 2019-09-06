@@ -60,7 +60,7 @@
 
 (use-package expand-region
   :ensure t
-  :bind ("M-m" . er/expand-region))
+  :bind ("C-w" . er/expand-region))
 
 (use-package crux
   :ensure t
@@ -104,9 +104,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (dap-mode lsp-java lsp-ui company-lsp lsp-mode use-package))))
+ '(package-selected-packages (quote (use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
