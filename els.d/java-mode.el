@@ -1,4 +1,4 @@
-;;; java.el --- Java
+;;; java-mode.el --- Java
 ;;; Commentary:
 ;;; Code:
 (use-package cc-mode :ensure t)
@@ -17,4 +17,4 @@
 
 (use-package dap-java :after (lsp-java))
 
-;;; java.el ends here
+;;; java-mode.el ends here
