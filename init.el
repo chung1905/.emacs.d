@@ -73,8 +73,8 @@
   ("C-S-<return>". crux-smart-open-line)
   ("C-c n" . crux-cleanup-buffer-or-region)
   ("C-c f" . crux-recentf-find-file)
-  ("C-a" . crux-move-beginning-of-line)
-  ("<home>" . crux-move-beginning-of-line))
+  ("<home>" . crux-move-beginning-of-line)
+  ("C-M-j" . crux-move-beginning-of-line))
 
 (use-package projectile
   :ensure t

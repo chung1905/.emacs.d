@@ -17,6 +17,14 @@
 (global-set-key (kbd "M-i") 'previous-line)
 (global-set-key (kbd "M-k") 'next-line)
 
+(global-set-key (kbd "C-M-l") 'end-of-line)
+(global-set-key (kbd "C-M-j") 'beginning-of-line)
+(global-set-key (kbd "C-M-i") 'previous-line)
+(global-set-key (kbd "C-M-k") 'next-line)
+
+(global-set-key (kbd "C-<tab>") 'completion-at-point)
+(global-set-key (kbd "C-a") 'mark-whole-buffer)
+(global-set-key (kbd "C-e") 'switch-to-buffer)
 (global-set-key (kbd "C-/") 'comment-line)
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 (global-set-key (kbd "C-s") 'save-buffer)

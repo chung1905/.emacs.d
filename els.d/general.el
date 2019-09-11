@@ -5,11 +5,15 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (toggle-frame-maximized)
 (menu-bar-mode -1)
+(global-hl-line-mode +1)
+(column-number-mode +1)
+(global-auto-complete-mode +1)
+
 (if (display-graphic-p)
     (progn
       (toggle-scroll-bar -1)
       (tool-bar-mode -1)))
-(global-hl-line-mode +1)
+
 (setq inhibit-startup-screen t)
 (setq frame-title-format
       '((:eval (if (buffer-file-name)
