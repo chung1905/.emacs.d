@@ -36,6 +36,7 @@
 
 (use-package whitespace
   :ensure t
+  :diminish global-whitespace-mode
   :custom
   (whitespace-style '(face trailing tabs spaces indentation space-after-tab space-before-tab space-mark tab-mark))
   :config
@@ -43,6 +44,7 @@
 
 (use-package auto-complete
   :ensure t
+  :diminish auto-complete-mode
   :config
   (global-auto-complete-mode +1))
 
@@ -96,6 +98,7 @@
   (projectile-mode +1)
   :diminish projectile-mode
   :bind-keymap
+  ("C-p" . projectile-command-map)
   ("C-c p" . projectile-command-map))
 
 (use-package counsel-projectile
