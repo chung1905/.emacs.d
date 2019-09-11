@@ -14,10 +14,9 @@
 (global-set-key (kbd "C-j") 'backward-char)
 (global-set-key (kbd "C-l") 'forward-char)
 
-;; Separate C-i and "Tab" key
-;; Source: https://stackoverflow.com/a/11319885/6881855
-(define-key input-decode-map (kbd "M-j") (kbd "H-j"))
-(global-set-key (kbd "H-j") 'backward-word)
+(define-key input-decode-map (kbd "M-j") (kbd "M-<left>"))
+(define-key input-decode-map (kbd "M-J") (kbd "M-S-<left>"))
+
 (global-set-key (kbd "M-l") 'forward-word)
 (global-set-key (kbd "M-i") 'previous-line)
 (global-set-key (kbd "M-k") 'next-line)
