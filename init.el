@@ -36,7 +36,7 @@
 
 (use-package diminish
   :ensure t
-  :diminish eldoc-mode)
+  :diminish eldoc-mode abbrev-mode auto-revert-mode)
 
 (use-package counsel
   :ensure t
@@ -59,6 +59,8 @@
     (smartparens-global-mode 1)
     (show-paren-mode t)))
 
+(use-package dracula-theme :ensure t)
+
 (use-package expand-region
   :ensure t
   :bind ("C-w" . er/expand-region))
@@ -80,6 +82,7 @@
   ;; (projectile-git-command "git ls-files -zco" "Search files which are ignored by git.")
   :config
   (projectile-mode +1)
+  :diminish projectile-mode
   :bind-keymap
   ("C-c p" . projectile-command-map))
 
@@ -97,6 +100,7 @@
 
 (use-package flycheck
   :ensure t
+  :diminish flycheck-mode
   :config
   (global-flycheck-mode t))
 
@@ -105,7 +109,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (dockerfile-mode use-package))))
+ '(package-selected-packages (quote (use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
