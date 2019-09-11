@@ -8,12 +8,14 @@
 (global-hl-line-mode +1)
 (column-number-mode +1)
 
+(setq inhibit-startup-screen t)
+(setq-default indent-tabs-mode nil)
+
 (if (display-graphic-p)
     (progn
       (toggle-scroll-bar -1)
       (tool-bar-mode -1)))
 
-(setq inhibit-startup-screen t)
 (setq frame-title-format
       '((:eval (if (buffer-file-name)
        (abbreviate-file-name (buffer-file-name))

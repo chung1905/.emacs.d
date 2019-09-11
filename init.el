@@ -13,8 +13,8 @@
 (require 'package)
 (setq package-archives
       '(("melpa" . "https://melpa.org/packages/")
-	("gnu" . "https://elpa.gnu.org/packages/")
-	("org" . "http://orgmode.org/elpa/")))
+        ("gnu" . "https://elpa.gnu.org/packages/")
+        ("org" . "http://orgmode.org/elpa/")))
 (package-initialize)
 
 (unless package-archive-contents
@@ -58,9 +58,9 @@
   (setq ivy-use-virtual-buffers t)
   (setq enable-recursive-minibuffers t)
   :bind (("C-f" . swiper)
-	 ("M-x" . counsel-M-x)
-	 ("C-c C-r" . ivy-resume)
-	 ("C-x C-f" . counsel-find-file)))
+         ("M-x" . counsel-M-x)
+         ("C-c C-r" . ivy-resume)
+         ("C-x C-f" . counsel-find-file)))
 
 (use-package smartparens
   :ensure t
