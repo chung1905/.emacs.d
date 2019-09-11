@@ -34,6 +34,11 @@
 (load-user-file "web-mode.el")
 (load-user-file "angularjs-mode.el")
 
+(use-package auto-complete
+  :ensure t
+  :config
+  (global-auto-complete-mode +1))
+
 (use-package diminish
   :ensure t
   :diminish eldoc-mode abbrev-mode auto-revert-mode)
@@ -59,7 +64,7 @@
     (smartparens-global-mode 1)
     (show-paren-mode t)))
 
-(use-package dracula-theme :ensure t)
+(use-package monokai-theme :ensure t)
 
 (use-package expand-region
   :ensure t

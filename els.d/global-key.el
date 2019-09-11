@@ -19,8 +19,8 @@
 
 (global-set-key (kbd "C-M-l") 'end-of-line)
 (global-set-key (kbd "C-M-j") 'beginning-of-line)
-(global-set-key (kbd "C-M-i") 'previous-line)
-(global-set-key (kbd "C-M-k") 'next-line)
+(global-set-key (kbd "C-M-i") 'backward-paragraph)
+(global-set-key (kbd "C-M-k") 'forward-paragraph)
 
 (global-set-key (kbd "C-<tab>") 'completion-at-point)
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
