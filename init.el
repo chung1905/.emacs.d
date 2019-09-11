@@ -34,6 +34,13 @@
 (load-user-file "web-mode.el")
 (load-user-file "angularjs-mode.el")
 
+(use-package whitespace
+  :ensure t
+  :custom
+  (whitespace-style '(face trailing tabs spaces indentation space-after-tab space-before-tab space-mark tab-mark))
+  :config
+  (global-whitespace-mode))
+
 (use-package auto-complete
   :ensure t
   :config
