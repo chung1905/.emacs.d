@@ -25,4 +25,7 @@
 	     ;; Return back (optional)
 	     (define-key php-mode-map (kbd "M-[")
 	       'ac-php-location-stack-back)))
+
+(use-package geben
+  :ensure t)
 ;;; php-mode.el ends here
