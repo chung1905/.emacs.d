@@ -34,6 +34,12 @@
 (load-user-file "web-mode.el")
 (load-user-file "angularjs-mode.el")
 
+(use-package diff-hl
+  :ensure t
+  :config
+  (global-diff-hl-mode)
+  (diff-hl-flydiff-mode +1))
+
 (use-package whitespace
   :ensure t
   :diminish global-whitespace-mode
