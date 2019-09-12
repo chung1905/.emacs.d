@@ -38,7 +38,9 @@
   :ensure t
   :config
   (global-diff-hl-mode)
-  (diff-hl-flydiff-mode +1))
+  (diff-hl-flydiff-mode +1)
+  (unless (display-graphic-p)
+      (diff-hl-margin-mode)))
 
 (use-package whitespace
   :ensure t
