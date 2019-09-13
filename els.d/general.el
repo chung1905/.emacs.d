@@ -10,7 +10,7 @@
 
 (setq save-interprogram-paste-before-kill t)
 (setq inhibit-startup-screen t)
-(setq tab-width 4)
+(setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 
 (if (display-graphic-p)
