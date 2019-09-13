@@ -8,7 +8,9 @@
 (global-hl-line-mode +1)
 (column-number-mode +1)
 
+(setq save-interprogram-paste-before-kill t)
 (setq inhibit-startup-screen t)
+(setq tab-width 4)
 (setq-default indent-tabs-mode nil)
 
 (if (display-graphic-p)
