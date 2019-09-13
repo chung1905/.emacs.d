@@ -33,6 +33,7 @@
 (load-user-file "php-mode.el")
 (load-user-file "web-mode.el")
 (load-user-file "angularjs-mode.el")
+(load-user-file "yaml-mode.el")
 
 (use-package diff-hl
   :ensure t
