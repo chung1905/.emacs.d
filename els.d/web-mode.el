@@ -1,4 +1,4 @@
-;;; web-mode.el --- PHP config file
+;;; web-mode.el --- Web-mode
 ;;; Commentary:
 ;;; Code:
 (use-package web-mode

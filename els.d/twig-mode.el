@@ -1,4 +1,4 @@
-;;; twig-mode.el --- Angular
+;;; twig-mode.el --- Twig
 ;;; Commentary:
 ;;; Code:
 (use-package twig-mode

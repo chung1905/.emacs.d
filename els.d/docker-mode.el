@@ -1,4 +1,4 @@
-;;; docker-mode.el --- Java
+;;; docker-mode.el --- Docker
 ;;; Commentary:
 ;;; Code:
 (use-package dockerfile-mode :ensure t)

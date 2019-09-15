@@ -1,4 +1,4 @@
-;;; tramp-docker.el --- Angular
+;;; tramp-docker.el --- Tramp
 ;;; Commentary:
 ;;; Code:
 (use-package docker-tramp

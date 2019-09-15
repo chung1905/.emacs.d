@@ -1,4 +1,4 @@
-;;; yaml-mode.el --- Angular
+;;; yaml-mode.el --- Yaml
 ;;; Commentary:
 ;;; Code:
 (use-package yaml-mode
