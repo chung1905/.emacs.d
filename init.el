@@ -31,6 +31,7 @@
 (load-user-file "docker-mode.el")
 (load-user-file "java-mode.el")
 (load-user-file "php-mode.el")
+(load-user-file "rust-mode.el")
 (load-user-file "web-mode.el")
 (load-user-file "angularjs-mode.el")
 (load-user-file "twig-mode.el")
