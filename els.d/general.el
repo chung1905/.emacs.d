@@ -7,9 +7,12 @@
 (menu-bar-mode -1)
 (global-hl-line-mode +1)
 (column-number-mode +1)
+(global-auto-revert-mode t)
 
 (setq save-interprogram-paste-before-kill t)
 (setq inhibit-startup-screen t)
+(setq dired-listing-switches "-alh")
+(setq-default create-lockfiles nil)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 
@@ -22,8 +25,10 @@
       '((:eval (if (buffer-file-name)
        (abbreviate-file-name (buffer-file-name))
        "%b"))))
+
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
+
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
