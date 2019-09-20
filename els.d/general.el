@@ -32,7 +32,7 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-(add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (when (version<= "26.0.50" emacs-version)
   (global-display-line-numbers-mode))
