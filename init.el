@@ -29,6 +29,7 @@
 (load-user-file "general.el")
 (load-user-file "global-key.el")
 (load-user-file "docker-mode.el")
+(load-user-file "python-mode.el")
 (load-user-file "java-mode.el")
 (load-user-file "php-mode.el")
 (load-user-file "rust-mode.el")
