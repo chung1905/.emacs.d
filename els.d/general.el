@@ -3,7 +3,7 @@
 ;;; Code:
 
 (fset 'yes-or-no-p 'y-or-n-p)
-(toggle-frame-maximized)
+;; (toggle-frame-maximized)
 (menu-bar-mode -1)
 (global-hl-line-mode +1)
 (column-number-mode +1)

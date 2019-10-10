@@ -13,8 +13,8 @@
 (require 'package)
 (setq package-archives
       '(("melpa" . "https://melpa.org/packages/")
-        ("gnu" . "https://elpa.gnu.org/packages/")
-        ("org" . "http://orgmode.org/elpa/")))
+        ("gnu" . "https://elpa.gnu.org/packages/")))
+        ;; ("org" . "http://orgmode.org/elpa/")))
 (package-initialize)
 
 (unless package-archive-contents
@@ -30,15 +30,18 @@
 (load-user-file "global-key.el")
 (load-user-file "docker-mode.el")
 (load-user-file "python-mode.el")
-(load-user-file "java-mode.el")
+;; (load-user-file "java-mode.el")
 (load-user-file "php-mode.el")
 (load-user-file "rust-mode.el")
 (load-user-file "web-mode.el")
-(load-user-file "angularjs-mode.el")
-(load-user-file "twig-mode.el")
+;; (load-user-file "angularjs-mode.el")
+;; (load-user-file "twig-mode.el")
 (load-user-file "yaml-mode.el")
-(load-user-file "tramp-docker.el")
 (load-user-file "cmake.el")
+
+(use-package diminish
+  :ensure t
+  :diminish eldoc-mode abbrev-mode auto-revert-mode)
 
 (use-package magit
   :ensure t)
@@ -64,10 +67,6 @@
   :diminish auto-complete-mode
   :config
   (global-auto-complete-mode +1))
-
-(use-package diminish
-  :ensure t
-  :diminish eldoc-mode abbrev-mode auto-revert-mode)
 
 (use-package counsel
   :ensure t
@@ -124,11 +123,11 @@
   (counsel-projectile-mode)
 )
 
-(use-package yasnippet
-  :ensure t
-  :diminish yas-minor-mode
-  :config
-  (yas-global-mode 1))
+;; (use-package yasnippet
+  ;; :ensure t
+  ;; :diminish yas-minor-mode
+  ;; :config
+  ;; (yas-global-mode 1))
 
 (use-package flycheck
   :ensure t

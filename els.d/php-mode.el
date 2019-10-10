@@ -5,7 +5,8 @@
   :ensure t)
 
 (use-package ac-php
-  :ensure t)
+  :ensure t
+  :custom (ac-php-tags-path (file-truename (concat user-emacs-directory "ac-php"))))
 
 (add-hook 'php-mode-hook
           '(lambda ()
