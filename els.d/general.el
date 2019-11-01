@@ -10,6 +10,7 @@
 (global-auto-revert-mode t)
 (desktop-save-mode 1)
 
+(setq ring-bell-function 'ignore)
 (setq save-interprogram-paste-before-kill t)
 (setq inhibit-startup-screen t)
 (setq dired-listing-switches "-alh")
