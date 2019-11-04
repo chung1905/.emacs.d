@@ -59,6 +59,7 @@
   :diminish global-whitespace-mode
   :custom
   (whitespace-style '(face trailing tabs lines-tail tab-mark))
+  (whitespace-line-column 120)
   :config
   (global-whitespace-mode))
 
