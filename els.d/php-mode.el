@@ -8,16 +8,21 @@
   :ensure t
   :custom (ac-php-tags-path (file-truename (concat user-emacs-directory "ac-php"))))
 
+(use-package company-php
+  :ensure t)
+
 (add-hook 'php-mode-hook
           '(lambda ()
-             ;; Enable auto-complete-mode
-             (auto-complete-mode t)
-
-             ;; (require 'ac-php)
-             (setq ac-sources '(ac-source-php))
+             ;; Enable company-mode
+             (company-mode t)
+             (require 'company-php)
 
              ;; Enable ElDoc support (optional)
              (ac-php-core-eldoc-setup)
+
+             (set (make-local-variable 'company-backends)
+                  '((company-ac-php-backend company-dabbrev-code)
+                    company-capf company-files))
 
              ;; Jump to definition (optional)
              (define-key php-mode-map (kbd "M-]")

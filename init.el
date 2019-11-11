@@ -30,7 +30,7 @@
 (load-user-file "global-key.el")
 (load-user-file "docker-mode.el")
 (load-user-file "python-mode.el")
-;; (load-user-file "java-mode.el")
+(load-user-file "java-mode.el")
 (load-user-file "php-mode.el")
 (load-user-file "rust-mode.el")
 (load-user-file "web-mode.el")
@@ -63,11 +63,15 @@
   :config
   (global-whitespace-mode))
 
-(use-package auto-complete
+;; (use-package auto-complete
+  ;; :ensure t
+  ;; :diminish auto-complete-mode
+  ;; :config
+  ;; (global-auto-complete-mode +1))
+(use-package company-mode
   :ensure t
-  :diminish auto-complete-mode
   :config
-  (global-auto-complete-mode +1))
+  (global-company-mode +1))
 
 (use-package counsel
   :ensure t
