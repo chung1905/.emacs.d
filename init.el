@@ -46,6 +46,9 @@
 (use-package magit
   :ensure t)
 
+(use-package multiple-cursors
+  :ensure t)
+
 (use-package diff-hl
   :ensure t
   :config
