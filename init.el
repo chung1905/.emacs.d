@@ -149,7 +149,16 @@
 (use-package sr-speedbar
   :ensure t
   :custom
-  (speedbar-show-unknown-files t))
+  (pop-up-windows nil)
+  (speedbar-use-images nil)
+  (speedbar-show-unknown-files t)
+  (sr-speedbar-skip-other-window-p t)
+  (sr-speedbar-delete-windows t))
+
+(use-package projectile-speedbar
+  :ensure t
+  :config
+  (projectile-speedbar-toggle))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

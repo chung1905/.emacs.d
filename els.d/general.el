@@ -9,6 +9,7 @@
 (column-number-mode +1)
 (global-auto-revert-mode t)
 (desktop-save-mode 1)
+(sr-speedbar-open)
 
 (setq ring-bell-function 'ignore)
 (setq save-interprogram-paste-before-kill t)
