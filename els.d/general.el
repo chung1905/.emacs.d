@@ -3,13 +3,12 @@
 ;;; Code:
 
 (fset 'yes-or-no-p 'y-or-n-p)
-;; (toggle-frame-maximized)
+(toggle-frame-maximized)
 (menu-bar-mode -1)
 (global-hl-line-mode +1)
 (column-number-mode +1)
 (global-auto-revert-mode t)
 (desktop-save-mode 1)
-(sr-speedbar-open)
 
 (setq ring-bell-function 'ignore)
 (setq save-interprogram-paste-before-kill t)

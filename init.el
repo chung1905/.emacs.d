@@ -73,6 +73,7 @@
   ;; (global-auto-complete-mode +1))
 (use-package company
   :ensure t
+  :diminish company-mode
   :config
   (global-company-mode +1))
 
@@ -158,7 +159,8 @@
 (use-package projectile-speedbar
   :ensure t
   :config
-  (projectile-speedbar-toggle))
+  (sr-speedbar-open))
+  ;; (projectile-speedbar-toggle))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
