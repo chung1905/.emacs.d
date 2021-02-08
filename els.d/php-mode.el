@@ -16,12 +16,11 @@
 
 (use-package lsp-treemacs :ensure t :commands lsp-treemacs-errors-list)
 
-(use-package lsp-php
-  :after lsp
-  :config
-  (setq lsp-phpactor-path (concat
-                           (replace-regexp-in-string "\n$" ""
-                                                     (shell-command-to-string "composer config --global home"))
-                           "/vendor/bin/phpactor")))
+(use-package lsp-php :after lsp)
+
+(setq lsp-phpactor-path
+      (concat
+       (replace-regexp-in-string "\n$" "" (shell-command-to-string "composer config --global home"))
+       "/vendor/bin/phpactor"))
 
 ;;; php-mode.el ends here
