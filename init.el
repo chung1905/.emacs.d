@@ -37,6 +37,7 @@
 ;; (load-user-file "angularjs-mode.el")
 ;; (load-user-file "twig-mode.el")
 (load-user-file "yaml-mode.el")
+(load-user-file "json-mode.el")
 (load-user-file "cmake.el")
 
 (use-package diminish
