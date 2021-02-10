@@ -90,6 +90,10 @@
          ("C-c C-r" . ivy-resume)
          ("C-x C-f" . counsel-find-file)))
 
+;; To use swiper with options (eg. case sensitive)
+(use-package ivy-hydra
+  :ensure t)
+
 (use-package smartparens
   :ensure t
   :diminish smartparens-mode
