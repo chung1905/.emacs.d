@@ -1,13 +1,14 @@
 ;;; php-mode.el --- PHP config file
 ;;; Commentary:
 ;;; Code:
-(use-package php-mode
+(use-package phps-mode
   :ensure t)
 
 (use-package lsp-mode
   :ensure t
   :hook (
-         (php-mode . lsp))
+         (php-mode . lsp)
+         (phps-mode . lsp))
   :commands lsp)
 
 (use-package lsp-ui :ensure t :commands lsp-ui-mode)
@@ -16,11 +17,6 @@
 
 (use-package lsp-treemacs :ensure t :commands lsp-treemacs-errors-list)
 
-(use-package lsp-php :after lsp)
-
-(setq lsp-phpactor-path
-      (concat
-       (replace-regexp-in-string "\n$" "" (shell-command-to-string "composer config --global home"))
-       "/vendor/bin/phpactor"))
+(use-package lsp-php :ensure t :after lsp)
 
 ;;; php-mode.el ends here
