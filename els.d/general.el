@@ -8,7 +8,7 @@
 (global-hl-line-mode +1)
 (column-number-mode +1)
 (global-auto-revert-mode t)
-(desktop-save-mode 1)
+;; (desktop-save-mode 1)
 
 (setq ring-bell-function 'ignore)
 (setq save-interprogram-paste-before-kill t)
