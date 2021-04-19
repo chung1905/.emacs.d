@@ -14,6 +14,7 @@
 (setq save-interprogram-paste-before-kill t)
 (setq inhibit-startup-screen t)
 (setq dired-listing-switches "-alh")
+(setq-default cursor-type 'bar)
 (setq-default create-lockfiles nil)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
