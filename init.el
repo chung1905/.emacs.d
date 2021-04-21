@@ -47,6 +47,9 @@
 (use-package magit
   :ensure t)
 
+(use-package dumb-jump
+  :ensure t)
+
 (use-package multiple-cursors
   :ensure t)
 

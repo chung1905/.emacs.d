@@ -1,13 +1,10 @@
 ;;; php-mode.el --- PHP config file
 ;;; Commentary:
 ;;; Code:
-(use-package phps-mode
-  :ensure t)
 
 (use-package lsp-mode
   :ensure t
-  :hook (
-         (php-mode . lsp)
+  :hook ((php-mode . lsp)
          (phps-mode . lsp))
   :commands lsp)
 
