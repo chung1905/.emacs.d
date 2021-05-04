@@ -16,6 +16,8 @@
 
 (use-package lsp-php :after lsp)
 
+(use-package php-mode :ensure t)
+
 (when (executable-find "phpactor") (setq lsp-phpactor-path "phpactor"))
 
 ;;; php-mode.el ends here
