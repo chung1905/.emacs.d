@@ -90,7 +90,10 @@
     (smartparens-global-mode 1)
     (show-paren-mode t)))
 
-(use-package monokai-theme :ensure t)
+(use-package monokai-theme
+  :ensure t
+  :config
+  (load-theme 'monokai t))
 
 (use-package expand-region
   :ensure t
