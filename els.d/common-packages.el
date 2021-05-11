@@ -2,6 +2,11 @@
 ;;; Commentary:
 ;;; Code:
 
+(use-package evil
+  :ensure t
+  :config
+  (evil-mode))
+
 (use-package treemacs
   :ensure t
   :defer t
@@ -48,7 +53,7 @@
   (global-diff-hl-mode)
   (diff-hl-flydiff-mode +1)
   (unless (display-graphic-p)
-      (diff-hl-margin-mode)))
+    (diff-hl-margin-mode)))
 
 (use-package whitespace
   :ensure t
@@ -112,20 +117,15 @@
 
 (use-package projectile
   :ensure t
-  ;; :custom
+  :custom
+  (projectile-sort-order 'recently-active)
+  (projectile-enable-caching t)
   ;; (projectile-git-command "git ls-files -zco" "Search files which are ignored by git.")
   :config
   (projectile-mode +1)
   :diminish projectile-mode
   :bind-keymap
-  ("C-p" . projectile-command-map)
   ("C-c p" . projectile-command-map))
-
-(use-package counsel-projectile
-  :ensure t
-  :config
-  (counsel-projectile-mode)
-)
 
 (use-package yasnippet
   :ensure t

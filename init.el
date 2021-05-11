@@ -31,15 +31,15 @@
 (load-user-file "common-packages.el")
 (load-user-file "docker-mode.el")
 (load-user-file "python-mode.el")
-;; (load-user-file "java-mode.el")
 (load-user-file "php-mode.el")
 (load-user-file "rust-mode.el")
 (load-user-file "web-mode.el")
-;; (load-user-file "angularjs-mode.el")
-;; (load-user-file "twig-mode.el")
 (load-user-file "yaml-mode.el")
 (load-user-file "json-mode.el")
 (load-user-file "cmake.el")
+;; (load-user-file "java-mode.el")
+;; (load-user-file "angularjs-mode.el")
+;; (load-user-file "twig-mode.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
