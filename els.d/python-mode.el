@@ -9,10 +9,4 @@
                          (require 'lsp-python-ms)
                          (lsp))))
 
-(add-hook 'hack-local-variables-hook
-          (lambda ()
-            (when (derived-mode-p 'python-mode)
-              (require 'lsp-python-ms)
-              (lsp)))) ; or lsp-deferred
-
 ;;; python-mode.el ends here
